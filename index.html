@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <script>
+        
+        
+        let computerScore = 0;
+        let playerScore = 0;
+
+        function computerPlay() {
+            computerChoices = ['rock','paper','scissors'];
+            return computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        }
+
+        function playRound(playerSelection, computerSelection){
+            playerSelection = prompt('rock, paper, or scissors?');
+            playerSelection = playerSelection.toLowerCase();
+            computerSelection = computerPlay().toLowerCase();
+            if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
+                (playerSelection == 'paper' && computerSelection == 'rock') ||
+                (playerSelection == 'scissors' && computerSelection == 'paper')){
+                    alert('You win! ' + playerSelection + ' beats ' + computerSelection);
+                    playerScore++;
+                } else if (playerSelection === computerSelection){
+                    alert('Tie!');
+                    computerScore++;
+                    playerScore++;
+                } else {
+                    alert('You lose! ' + computerSelection + ' beats ' + playerSelection);
+                    computerScore++;
+                }
+        }
+
+        game();
+
+        function game(){
+            for ( let i = 0; i < 5; i++){
+                playRound();
+                alert(playerScore + '-' + computerScore)
+            }
+
+            if (playerScore > computerScore){
+                alert('You won the game!')
+            } else {
+                alert('You lose the game!')
+            }
+        }
+        
+        
+       
+       
+        
+
+    </script> 
+</body>
+</html>
