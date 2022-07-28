@@ -1,0 +1,85 @@
+body{
+    background-color: blue;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.optionBtn{
+    display:flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.optionBtn > button{
+    margin: 15px;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(23, 23, 27);
+    border-radius: 12px;
+}
+
+.score-label{
+    display: flex;
+    justify-content: center;
+}
+
+.score-label > h3{
+    color: white;
+    margin: 30px;
+}
+
+.score-container{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.score-container > .player-score,.computer-score{
+    font-size: 25px;
+    color:white;
+    margin-top: 55px;
+    margin-right: 60px;
+    margin-left: 45px;
+}
+
+.result-container{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    margin: 50px;
+}
+
+.btn-reset{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-reset > button{
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(23, 23, 27);
+    border-radius: 12px;
+}
+
+.round-container{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+

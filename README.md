@@ -1,1 +1,1 @@
-# First project on JavaScript for The Odin Project: a classic rock,paper,scissors only prompt version.
+# First project on JavaScript for The Odin Project: a classic rock,paper,scissors.
